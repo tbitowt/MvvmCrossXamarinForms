@@ -19,7 +19,7 @@ namespace XamarinFormsMvvm.Droid
     /// <summary>
     /// Defines the MainActivity type.
     /// </summary>
-    [Activity(Label = "", MainLauncher = false, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : FormsApplicationActivity
     {
         /// <summary>
