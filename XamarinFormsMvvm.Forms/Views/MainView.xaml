@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsMvvm.Forms.Views.MainView"
+             xmlns:viewModels="clr-namespace:XamarinFormsMvvm.Core.ViewModels;assembly=XamarinFormsMvvm.Core"
+             Title="MainView Page"
+             >
+  <ContentPage.BindingContext>
+		<viewModels:MainViewModel />
+	</ContentPage.BindingContext>
+  <ContentView>
+    <StackLayout>
+        <Label Text='{Binding SampleText}' VerticalOptions='Center' HorizontalOptions='Center'/>
+        <Label Text='{Binding SampleText2}' VerticalOptions='Center' HorizontalOptions='Center'/>
+        <Button Command="{Binding ResetCommand}" Text="asd" VerticalOptions="Center" HorizontalOptions="Center"/>
+        
+    </StackLayout>
+  </ContentView>
+</ContentPage>
